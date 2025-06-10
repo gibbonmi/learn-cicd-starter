@@ -33,3 +33,6 @@ jobs:
         
       - name: Style check
         run: test -z $(go fmt ./...)
+
+      - name: Lint with staticcheck
+        run: staticheck ./...
